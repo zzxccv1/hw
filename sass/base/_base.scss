@@ -1,0 +1,52 @@
+.body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background: $text-color-white;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: $text-color-black;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-winth: $tablet) {
+  h2 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* *::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.is-hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,66 @@
+/* Чем мы занимаемся */
+.work {
+  display: none;
+  margin: 0px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    // padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .work-div {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+
+  .work-ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+    }
+  }
+
+  .work-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    img {
+      position: relative;
+    }
+  }
+
+  .work-text {
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+
+    p {
+      position: absolute;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $text-color-white;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients-div {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.clients-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+
+  @media acreen and (min-width: $tablet) {
+    height: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
+    flex-direction: row;
+    height: auto;
+  }
+
+  li {
+    display: flex;
+    margin: 15px;
+
+    @media screen and (max-width: $mobile-maximum) {
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: $mobile-maximum) {
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      &:nth-child(-n + 3) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 0px;
+    }
+  }
+}
+
+.clients-link {
+  width: 210px;
+  height: 90px;
+  border: 1px solid $icon-collor;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $icon-collor;
+  transition: $animation-timing-time;
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    transition: $animation-timing-time;
+  }
+}
+
+.clients-icon {
+  fill: currentColor;
+}

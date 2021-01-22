@@ -1,0 +1,21 @@
+.button {
+  width: 200px;
+  height: 50px;
+  background: $bt-second;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $text-color-white;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}

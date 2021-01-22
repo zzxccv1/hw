@@ -1,0 +1,313 @@
+.page-footer {
+  background: $background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: inherit;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 76px;
+    margin-right: 89px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+    margin-left: auto;
+  }
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-footer-logo {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    margin-left: inherit;
+  }
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $bt-second;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  span {
+    color: $text-color-white;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-address {
+  margin: auto;
+}
+
+@media screen and (min-width: $tablet) {
+}
+
+@media screen and (min-width: $desktop) {
+}
+
+.adress-footer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $desktop) {
+    align-items: inherit;
+    width: 231px;
+  }
+
+  a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.adress {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $text-color-white;
+  padding-bottom: 5px;
+}
+
+.adress-footer a:hover,
+.adress-footer a:focus {
+  color: $accent-color;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
+}
+
+.footer-social-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color-white;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: auto;
+  }
+}
+
+.footer-social-list {
+  display: flex;
+
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-social-list li {
+  display: flex;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $text-color-white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: $animation-timing-time;
+  margin-top: 20px;
+
+  &:hover,
+  &:focus {
+    background: $accent-color;
+    transition: $animation-timing-time;
+  }
+}
+
+.footer-social-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 93px;
+  }
+
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-color-white;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 0px;
+    }
+  }
+
+  div {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
+  }
+}
+
+.subscription-input {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: $text-color-white;
+  background: $background-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  outline: none;
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input [type="email"]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-subscription {
+  width: 200px;
+  height: 50px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 26px;
+  padding-right: 31px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
+
+  span {
+    color: $text-color-white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+
+  svg {
+    fill: $text-color-white;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer__form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
